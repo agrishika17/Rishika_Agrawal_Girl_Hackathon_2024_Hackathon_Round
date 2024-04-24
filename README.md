@@ -7,10 +7,16 @@ Problem Statement: The objective is to create an AI-based system that focuses on
 * Disaster Relief: Enhance disaster relief and response efforts by leveraging satellite imagery during disasters like floods and wildfires, integrating existing geospatial information, and utilizing environmental data for affected regions.
 
 ## Solution
-Development of an AI model which takes environmental variables of the past ten years and based on that data gives the prediction of one or more dominant factors which can be the primary cause of the natural disaster and then compares those factors against a threshold to determine which areas can be most affected by the disaster. Since the model takes into account data of multiple years in advance, it can be used to predict a disaster well before it happens and aid in the evacuation efforts. Along with the environmental factors of a particular place (example elevation for flood, seismic zone for earthquake), socio economic factors such as area’s population density, and area distribution based on other factors(for example distribution based on wealth, divide of rural vs urban) can be used to determine which areas will be most critically hit and will affect how much population. This can help in evacuation efforts. Additionally predictive data of months of a year can be used to judge the seasonality of the disaster, i.e, prediction of whether the disaster is likely to happen that particular year or not based on the established seasonality of disaster in the preceding years.
-### Wildfire prediction model
-Wildfire prediction model can be explained by taking the example of a city in Kerala -> Kozhikode
-A heavy rainfall can be defined as rainfall greater than 100 mm in 24 hours. If a lot of rainfall is received in an area with low elevation such as Kozhikode (1 m - 50 m approx) that can potentially lead to flooding if the drainage system is not adequate. Rainfall depends on other environmental factors such as humidity, max. temperature, dew, cloud cover, visibility, sea level pressure, wind direction, wind speed to name a few. By taking into account the data of previous (7 days) (3 days in implementation) a prediction for the rainfall that can occur after 7 days can be made. This can give an idea about whether flooding is possible in the region or not (if it is greater than a threshold then flooding is possible). After the rainfall prediction, by using the data from the elevation of different areas of the district, it is possible to evaluate which areas are at risk of flooding. Furthermore using the socio economic distribution data (population density, rural vs urban areas, slums etc.) the impact can be measured on that area & hence proper arrangements can be made.
+
+Development of an AI model for wildfire prediction which utilizes environmental data from the preceding ten years to identify one or more dominant factors that contribute to the likelihood of a wildfire outbreak. The model compares the identified factors against predetermined thresholds to predict which areas are most susceptible to wildfire damage. Because the model incorporates multiple years of data, it can accurately predict potential disasters well in advance, which is valuable information for evacuation efforts.
+
+In addition to environmental factors such as elevation and surface temperature, the model also considers socio-economic factors such as population density and area distribution based on wealth or urbanization. This information is used to determine which areas are most at risk and likely to affect the largest populations. Consequently, these insights can help optimize evacuation efforts and minimize damage.
+
+Furthermore, the model can analyze predictive data from previous years to determine the seasonality of a potential disaster. This information can be used to determine whether an area is likely to face a wildfire outbreak during a particular season based on its historical patterns. Such insights can help prepare for the potential disaster and take preventive measures.
+
+### Predictive Model for Damage Reduction and Response Optimization during wildfire
+
+
 
 ## Setup of local environment
 1. Fork this repository.
@@ -23,6 +29,6 @@ A heavy rainfall can be defined as rainfall greater than 100 mm in 24 hours. If 
 [Formula to calculate NDVI = (BAND5-BAND4)/(BAND5+BAND4) , where Band 5 is for Near-Infrared spectroscopy and Band4 is for Red spectroscopy.]
 8. The file `calculate_ndvi.ipynb`is written in Google Earth Engine code editer. To run this file navigate to the google earth engine site `https://code.earthengine.google.com/5000efc78790babe8974970ac65a82a6`, provide authenticatation and then run the code file. 
 9. Mean NDVI value can be inspected for each pixel of the images displayed via Inspector section on the right side of the code editor. 
-10. For LST(Land Surface Temperature) calculation, a thorough block diagram is attached in jpg format which shows how an Landsat8 image can be used to calculate NDVI and LST.
+10. For LST(Land Surface Temperature) calculation, a thorough block diagram is attached in jpg format [navigate to `code/lst/L8_to_LST.jpg`] which shows how an Landsat8 image can be used to calculate NDVI and LST.
+11. Navigate to `flowcharts` to get thorough insights on how the model utilizes all the parameters and data collected and process involved to efficiently predict the wildfire.
 
-## Demo
