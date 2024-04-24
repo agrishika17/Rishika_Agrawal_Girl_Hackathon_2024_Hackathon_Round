@@ -14,11 +14,13 @@ In addition to environmental factors such as elevation and surface temperature, 
 
 Furthermore, the model can analyze predictive data from previous years to determine the seasonality of a potential disaster. This information can be used to determine whether an area is likely to face a wildfire outbreak during a particular season based on its historical patterns. Such insights can help prepare for the potential disaster and take preventive measures.
 
-### Predictive Model for Damage Reduction and Response Optimization during wildfire
+## Predictive Model for Damage Reduction and Response Optimization during wildfire
 
-![Alt text](https://drive.google.com/file/d/1BbCOCXdyZbhKtfQgn1jcedfAxKhsZKGb/view?usp=sharing)
+### Flowchart_Showing_Applications_of_ML_Algorithms
+https://drive.google.com/file/d/1BbCOCXdyZbhKtfQgn1jcedfAxKhsZKGb/view?usp=sharing
 
-![Alt text](https://drive.google.com/file/d/1btA4AUwcqgWUbUo7UXjSwDncJ7_HLgGn/view?usp=sharing)
+### Flowchart_of_Algorithm
+https://drive.google.com/file/d/1btA4AUwcqgWUbUo7UXjSwDncJ7_HLgGn/view?usp=sharing
 
 ## Setup of local environment
 1. Fork this repository.
