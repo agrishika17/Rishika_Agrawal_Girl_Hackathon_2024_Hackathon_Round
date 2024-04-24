@@ -16,7 +16,9 @@ Furthermore, the model can analyze predictive data from previous years to determ
 
 ### Predictive Model for Damage Reduction and Response Optimization during wildfire
 
+![Alt text](https://drive.google.com/file/d/1BbCOCXdyZbhKtfQgn1jcedfAxKhsZKGb/view?usp=sharing)
 
+![Alt text](https://drive.google.com/file/d/1btA4AUwcqgWUbUo7UXjSwDncJ7_HLgGn/view?usp=sharing)
 
 ## Setup of local environment
 1. Fork this repository.
